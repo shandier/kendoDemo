@@ -1,178 +1,511 @@
-*, *:before, *:after {
-  box-sizing: border-box;
+@charset "utf-8";
+
+body,html{
+	 margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	height: 100%;  
+	
+}
+input,select,table{
+	border-width:1px;
+	border-color: black;
+	font-family:"Museo Sans for Dell", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:black;
+}
+a{
+	text-decoration: underline;
+}
+.menu{
+	/* background-color:#CBE0F8; */
+	background: #179b77; 
 }
 
-html {
-  overflow-y: scroll;
+.layoutBody{
+	 vertical-align: top;
+	 border-style: outset;
+	 border-left-color:black;
+	 border-left-style:outset;
+	 border-color: black;
+	 border-width: thin;
+	 border-radius:8px 8px 8px 8px;
+	 -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius:8px 8px 8px 8px;
+    background: #179b77;
+}
+.layoutMenu{
+	 vertical-align: top;
+   	 text-align: left;
+   	 padding-left:-10;
+	 border-style: outset;
+	 border-color: black;
+	 border-width: thin;
+	 border-radius:8px 8px 8px 8px;
+	 background: rgba(19, 35, 47, 0.9);
+}
+.bodyStyle{
+	/* background: -moz-linear-gradient(left, #FFFFFF 25% ,#E7E9EA 75% );
+    background:-webkit-linear-gradient(left,#FFFFFF 25%,#E7E9EA 75%);  */
+/*  background: -moz-linear-gradient(left, #FFFFFF 25% ,#999 100% );
+    background:-webkit-linear-gradient(left,#FFFFFF 25%,#999 100%); */
+	 background:#D4D0D0;
+	   
+	
+}
+.headerStyle{
+	/* background: -moz-linear-gradient(left, #FFFFFF 0% ,#0185C6 100% );
+    background:-webkit-linear-gradient(left,#FFFFFF 0%,#0185C6 100%); */
+    color:#344B67;
+    /* background-color:#0188CC; */
+    background: rgba(19, 35, 47, 0.9);
+}
+tableLayout{
+	padding:5ex;
+	 border-radius:4% ,4% ,4% ,4%; 
+	border: outset; 
+}
+.dashboardBox{
+	 border: outset;
+	 border-color: black;
+	 border-width: thin; 
+	 width:100%; 
+	 height:100%; 
+	 background-color:white;
+}
+.divstyle{
+	/* border:1px solid black; */
+	/* border-top:3px solid #0185C6; */
+	/* border-bottom:3px solid #0185C6; */
+	
+   /*  background: -moz-linear-gradient(left, #FFFFFF 0% ,#999 100% );
+    background:-webkit-linear-gradient(left,#FFFFFF 0%,#999 100%); */
+    height:100%;
+    opacity:0.9;
+	/* for IE8 */
+ -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+ /* for IE5-7 */
+	filter: alpha(opacity=90);
+	height: 70%;
+}
+.menustyle{
+	background: -moz-linear-gradient(left, #FFFFFF 5% ,#0185C6 95% );
+    background:-webkit-linear-gradient(left,#FFFFFF 5%,#0185C6 95%);
+    opacity:0.9;
+ /*   color:#0185C6; */
+	/* for IE8 */
+ -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+ /* for IE5-7 */
+	filter: alpha(opacity=90);
+}
+.outerTable{
+	border:outset;
+	border-top:0px;
+	border-width:20%;
+   /*  border-radius: 0% 0% 0% 0%;
+    -moz-border-radius: 0% 0% 0% 0%;
+    overflow:hidden;
+    -webkit-border-radius: 30px;  */
+     box-shadow: 10% 105 10% black;  
 }
 
-body {
-  background: #c1bdba;
-  font-family: 'Titillium Web', sans-serif;
+.footerlink:link
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:9px;
+	color:white;
+	text-decoration:none;
+}
+.headerlink
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:white;
+	text-decoration:none;
+	text-decoration: underline;
+}
+.loginDetails{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:white;
+	text-decoration:none;
+}
+.footerlink:active
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:9px;
+	color:white;
+	text-decoration:none;
+}
+.footerlink:hover
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:9px;
+	color:white;
+	text-decoration:none;
+}
+.footerlink:visited
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:9px;
+	color:white;
+	text-decoration:none;
+}
+.txt
+{
+	font-family:"Museo Sans for Dell", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#444;
 }
 
-a {
-  text-decoration: none;
-  color: #1ab188;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+.forgotpassword
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:white;
 }
-a:hover {
-  color: #179b77;
+.footer
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:white;
 }
-
-.form {
-  background: rgba(19, 35, 47, 0.9);
-  padding: 40px;
-  max-width: 600px;
-  margin: 40px auto;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-}
-
-.tab-group {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 40px 0;
-}
-.tab-group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.tab-group li a {
-  display: block;
-  text-decoration: none;
-  padding: 15px;
-  background: rgba(160, 179, 176, 0.25);
-  color: #a0b3b0;
-  font-size: 20px;
-  float: left;
-  width: 50%;
-  text-align: center;
-  cursor: pointer;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-}
-.tab-group li a:hover {
-  background: #179b77;
-  color: #ffffff;
-}
-.tab-group .active a {
-  background: #1ab188;
-  color: #ffffff;
+.footerbluetxt
+{
+	font-family:"Museo for Dell", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#0085C3;
 }
 
-.tab-content > div:last-child {
-  display: none;
+hr {
+  border: 2;
+  /* background-color: #0185C6; */
+  background-color:white; 
+  height: 1px;
+  margin-top: -1%;
+
+
 }
 
-h1 {
-  text-align: center;
-  color: #ffffff;
-  font-weight: 300;
-  margin: 0 0 40px;
+.loginbg
+{
+	background-image:url(../images/Login-BG.jpg);
+	background-repeat:no-repeat;
 }
 
-label {
-  position: absolute;
-  -webkit-transform: translateY(6px);
-          transform: translateY(6px);
-  left: 13px;
-  color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  -webkit-backface-visibility: hidden;
-  pointer-events: none;
-  font-size: 22px;
+.logout{
+	font-family: "Museo Sans for Dell", Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: bolder;
+	color: #0185C6;	
+	padding-left: 30%;
+	text-decoration: none;
 }
-label .req {
-  margin: 2px;
-  color: #1ab188;
+.bodyhead
+{
+	font-family:"Museo for Dell", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:white;
+	font-weight:bold;
+	/* padding-top: 32px; */
 }
-
-label.active {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  left: 2px;
-  font-size: 14px;
+.bodyhead2
+{
+	font-family:"Museo for Dell", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:white;
+	font-weight:bold;
+	padding-top: 32px;
 }
-label.active .req {
-  opacity: 0;
+.tdSelect{
+	font-family:"Museo for Dell", Arial, Helvetica, sans-serif;
+	font-size:20px;
+	color:white;
+	background-colo:black;
+	font-weight:none;
 }
-
-label.highlight {
-  color: #ffffff;
-}
-
-input, textarea {
-  font-size: 22px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 5px 10px;
-  background: none;
-  background-image: none;
-  border: 1px solid #a0b3b0;
-  color: #ffffff;
-  border-radius: 0;
-  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
-}
-input:focus, textarea:focus {
-  outline: 0;
-  border-color: #1ab188;
+.tdHeading{
+	  opacity:0.9; 
+      background-color:#0185C6;  
+	}
+.heading
+{
+	font-family:"Museo for Dell", Arial, Helvetica, sans-serif;
+	font-size:25px;
+	color:white;
+	font-weight:bold;
 }
 
-textarea {
-  border: 2px solid #a0b3b0;
-  resize: vertical;
+.txtlink body
+{
+	font-family:"Museo Sans for Dell", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#444;
+	text-decoration:none;
 }
 
-.field-wrap {
-  position: relative;
-  margin-bottom: 40px;
+/* ul.menu {list-style:none; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif;}
+ul.menu * {margin:0; padding:0}
+ul.menu a {display:block; color:#FFF; text-decoration:none}
+ul.menu li {position:relative; float:left; margin-right:2px}
+ul.menu ul {position:absolute; top:32px; left:0; background:#CA0000; display:none; opacity:0; list-style:none; width:150px;}
+ul.menu ul li {position:relative; border:1px solid #FFF; border-top:none; width:148px; margin:0}
+ul.menu ul li a {display:block; padding:3px 7px 5px; background-color:#CA0000; font-size:11px;}
+ul.menu ul li a:hover {background-color:#EB2323;}
+ul.menu ul ul {left:148px; top:-1px; }
+ul.menu .menulink { padding:3px 7px 5px;  width:140px; font-family:Arial, Helvetica, sans-serif; color:#FFF; font-size:14px;}
+ul.menu .sub {background:#CA0000; url(images/arrow.gif) 136px 8px no-repeat; font:Arial, Helvetica, sans-serif; font-size:11px;}
+ */.topline {border-top:1px solid #FFF; font-family:Arial, Helvetica, sans-serif; font-size:11px;} 
+
+.newslink:link
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFF;
+	text-decoration:none;
+}
+.newslink:active
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFF;
+	text-decoration:none;
+}
+.newslink:hover
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000;
+	text-decoration:none;
+}
+.newslink:visited
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFF;
+	text-decoration:none;
 }
 
-.top-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.top-row > div {
-  float: left;
-  width: 48%;
-  margin-right: 4%;
-}
-.top-row > div:last-child {
-  margin: 0;
+.newstxt
+{
+	font-family:"Museo Sans for Dell", Arial, Helvetica, sans-serif;
+	color:#FFF;
+	font-size:11px;
+	padding-left:80px;
+	height:33px;
+	line-height:29px;
 }
 
-.button {
-  border: 0;
-  outline: none;
-  border-radius: 0;
-  padding: 15px 0;
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  background: #1ab188;
-  color: #ffffff;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-appearance: none;
+.txthead
+{
+	font-family:"Museo for Dell", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#ca0000;
 }
-.button:hover, .button:focus {
-  background: #179b77;
+.txt ul
+{
+	font-family:"Museo Sans for Dell", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#666;
+	margin-left:30px;
+}
+.txtwhite
+{
+	font-family:"Museo Sans for Dell", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#777;
+}
+.txtcopy
+{
+	font-family:"Museo Sans for Dell", Arial, Helvetica, sans-serif;
+	font-size:10.5px;
+	color:#666;
+
 }
 
-.button-block {
-  display: block;
-  width: 100%;
+.footerbg
+{background-image:url(../images/bg-footer.gif);
+background-repeat:repeat-x;
+}
+.tablehead,th
+{
+	font-family:"Museo Sans for Dell", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:black;
+	text-decoration:none;
+	font-weight:bolder;
+	padding-left:5px;
+	height: 30%;
+}
+.tablehead3
+	{
+	font-family:"Museo sans for Dell", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:black;
+	text-decoration:none;
+	font-weight:bolder;
+	padding-left:5px;
+	height: 30%;
+}
+.button{
+	background-color: #0085C3;
+	font-size: 14px;
+	font-weight: bold; 
+	border-color: white;
+	color:#CBE0F8;
+	cursor: pointer;
+	/* border-radius:15px 15px 15px 15px; */
+	height: 150%;
+	width:20%;
+	text-shadow: gray;
+}
+.loginhead
+{
+	font-family:"Museo for Dell", Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:black;
+	text-decoration:none;
+	/* font-weight:bolder; */
+	padding-left:5px;
+	height: 30%;
+}
+.layout{
+	padding:3%;
+	border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius:14px 14px 14px 14px; 
+    
+}
+.dataTable{
+	table-layout:auto;
+	border-color: white;
+}
+.tabletxt
+{
+	font-family:"Museo for Dell", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:black;/* 
+	font-weight:bold; */
+	text-decoration:none;
+	padding-left:8px;
+	
+	/* background-color:black;
+		opacity:0.9;
+	for IE8
+ -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+ for IE5-7
+	filter: alpha(opacity=90); */
+height: 10%;
 }
 
-.forgot {
-  margin-top: -20px;
-  text-align: right;
+.textareatxt
+{
+	font-family:"Museo Sans for Dell", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#444;
+	text-decoration:none;
+	padding-left:8px;
+}
+
+.menubg
+{
+	background-image:url(../images/menu-bg1.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.breadcrumb:link
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#999;
+	text-decoration:none;
+}
+.breadcrumb:active
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#999;
+	text-decoration:none;
+}
+.breadcrumb:hover
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#999;
+	text-decoration:none;
+}
+.breadcrumb:visited
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#999;
+	text-decoration:none;
+}
+.currentbread
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666;
+}
+
+#date_picker
+{
+display: inline;
+float: left;
+
+}
+.f_left  { float: left; }
+.f_right { float: right;}
+.pd5 {  padding: 5px;}
+.ofy_scroll { overflow-y: scroll;}
+.ht50 {  height: 50px;}
+.wt280 {  width: 280px; }
+.ml5 {  margin-left     : 2px;}
+
+.wordwrap { 
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+}
+.roleDescriptor{
+	
+	position:relative;
+	/* z-index: 1000; */
+	/* display:none; */
+	 /* top:0%; */
+	/* left:0%; */
+	height: 350%;
+	width: 100%; 
+	/* right:20%;
+	bottom:20%; */ 
+	/* background-color:#0185C6; */
+	opacity:0.9;
+	/* for IE8 */
+ -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+ /* for IE5-7 */
+	filter: alpha(opacity=90);
+}
+.dashboardDiv{
+	/* border: 1;
+	border-bottom-style:outset;
+	border-radius:15px 15px 15px 15px; */
+}
+.radius{
+	padding-left:3%;
+	padding-right:3%;
+	border: outset;
+	border-width:1px;
+	border-color:black;
+	border-radius: 8px 8px 8px 8px; 
+    /* -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius:8px 8px 8px px; */
+}
+.bodyTable{
+	
+	border: 1;
+	border-bottom-style: outset;
+	border-radius:5px,5px,5px,5px; 
 }
