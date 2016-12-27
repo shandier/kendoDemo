@@ -1,2 +1,2 @@
 <hr/>  
-<p>footer.</p>
+<h2>footer</h2>  
